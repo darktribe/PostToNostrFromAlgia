@@ -8,7 +8,7 @@ The system is designed to start algia running on a Linux server.
 
 The config.json in the repository is not for this project, but is the recommended config for algia.
 
-When PostToNostr.py is executed, it becomes a webhook that starts with "http:<yourdomain>:5000/webhook".
+When PostToNostr.py is executed, it becomes a webhook that starts with "http:<your domain>:5000/webhook".
 
 In the Post action to the webhook.
 { "id-key" : "test-key", "text" : "string to be POSTed" }
