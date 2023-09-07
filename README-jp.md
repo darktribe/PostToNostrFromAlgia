@@ -7,7 +7,7 @@ Linuxサーバー上にNostrにポストを投稿するためのWebhookを作り
 Linuxサーバー上で動いているalgiaを起動させる仕組みになっています。
 リポジトリのconfig.jsonはこのプロジェクト用ではなく、algiaのおすすめのコンフィグです。PrivateKeyを書き換えて使ってください。
 
-PostToNostr.pyを実行すると、「http:<your domain>:5000/webhook」で起動するWebhookになります。
+PostToNostr.pyを実行すると、「http:[global address of your server machine]:5000/webhook」で起動するWebhookになります。
 
 Webhookに対してPostアクションで
 { “id-key” : ”test-key”,”text” : “POSTしたい文字列" }
