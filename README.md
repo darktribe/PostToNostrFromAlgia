@@ -16,3 +16,5 @@ and the JSON
 "Content-Type: application/json" and POST it via HTTP with the Content-Type.
 
 To actually use it, change "/webhook" in PostToNostr.py to your favorite access URL, "port:5000" to your favorite port when changing the port, and ""test-key"" to change the access key.
+
+It is assumed that the startup method is to start using FOREVER. Specifically, start the program with "forever start -c python3 PostToNostr.py". It will work as a Webhook while it is running.

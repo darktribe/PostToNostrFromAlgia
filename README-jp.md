@@ -15,3 +15,5 @@ Webhookに対してPostアクションで
 "Content-Type: application/json" とContent-Typeを指定してHTTPでPOSTすればNostrに投稿されます。
 
 実際に使う際はPostToNostr.pyの「/webhook」を好きなアクセスURLに、ポートを変える際は「port:5000」を好きなポートに、アクセスキーを変えるには「"test-key”」を変えてください。
+
+起動方法としてはforeverを使って起動する事を想定しています。具体的には”forever start -c python3 PostToNostr.py”で起動して下さい。起動している間Webhookとして動きます。
